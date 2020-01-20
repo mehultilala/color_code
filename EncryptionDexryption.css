@@ -1,0 +1,34 @@
+body {
+    background-color: powderblue;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+h1   {color: blue;}
+p    {color: red;}
+
+
+.fullWidth{
+   width: 80%;
+}
+
+.halfWidth{
+    width: 50%;
+}
+.half-div {
+    width: 50%;
+    padding: 20Px;
+}
+.full-div {
+    width: 80%;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+legend {
+    color: blue;
+    font-size: larger;
+}
+.center{
+    text-align: center;
+}

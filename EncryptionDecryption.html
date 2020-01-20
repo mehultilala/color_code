@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="./EncryptionDecryptionJS.js"></script>
+    <link rel="stylesheet" href="./EncryptionDexryption.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Encrypt_D</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+    <h2 class="center">Encryption Decryption</h2>
+    <hr>
+    <div style="margin: auto">
+    <fieldset>
+        <legend class="center"> Encryption:</legend>
+        <div class="half-div">
+            Plain Text:<br>
+            <input type="text" id="inputText" class="fullWidth" value="ABCDEFG">
+            <br><br>
+            Pin Code:<br>
+            <input type="text" id="passCodeInput" class="fullWidth" value="1234">
+            <br><br>
+            <button onClick="encryptText(inputText.value,passCodeInput.value)"><b><span style="color: green">Click To Encrypt</span> </b>
+            </button>
+        </div>
+        <div class="full-div">
+        <b><span style="color: blue">Color</span> <span style="color: purple">Output</span></b>
+        <br>
+        <div id="output" class="full-div">
+            <div id="colorCode">
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend class="center"> Decryption:</legend>
+        <div class="half-div">
+        Pin Code:<br>
+        <input type="text" id="passCode" class="halfWidth" value="1234">
+        <br>
+        <br>
+        <button onClick="decryptCypher(passCode.value)"><b><span style="color: green">Click To Decrypt</span> </b>
+        </button>
+        <br>
+        <br>
+        Decrypted Plain Text:<br>
+        <input type="text" id="decryptedText" class="halfWidth" disabled>
+        <br>
+        </div>
+        <hr>
+    </fieldset>
+</div>
+</body>
+
+</html>
